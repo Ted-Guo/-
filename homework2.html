@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div id="ans"></div>
+
+<script >
+var i,j,k,l;
+
+	var ans2 = function(){
+	
+		for( i = 100;i<1000;i++){
+			j = parseInt(i/100);
+			k = parseInt((i%100)/10);
+			l = parseInt(i%10);
+			var sum = j*j*j+k*k*k+l*l*l;
+			if(sum == i){
+			document.getElementById("ans").innerHTML += 
+			sum+"<br>"
+			console.log(sum);
+			}
+		}
+	}
+
+	ans2();
+
+
+
+	
+	// var ans1 = function(){
+	// 	for(var i=1;i<10;i++){
+	// 		for(var j=0;j<10;j++){
+	// 			for(var k=0;k<10;k++){
+	// 				var sum1 = i*100+j*10+k;
+	// 				var sum2 = i*i*i+j*j*j+k*k*k;
+	// 				if(sum1 == sum2){
+	// 				// document.getElementById("ans").innerHTML = 
+	// 				// 						sum+"<br>"	
+	// 				console.log(sum1);
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+	// ans1();
+</script>
+</body>
+</html>
